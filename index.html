@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <style>
+      h1 {
+        font-size: 1em !important;
+      }
+      p {
+        font-size: 0.5em !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- slide 1 -->
+        <section data-auto-animate>
+          <h1 data-id="h1"><code>no images</code></h1>
+          <p>Please view this demo on Firefox and Chrome</p>
+        </section>
+        <section data-auto-animate>
+          <h1 data-id="h1"><code>class="r-stretch"</code></h1>
+          <p>Stretch only. As intended on Firefox & Chrome.</p>
+          <div class="r-stretch">
+            <img src="images/wide.png" alt="wide image" />
+            <img src="images/tall.png" alt="tall image" />
+          </div>
+        </section>
+        <!-- slide 2 -->
+        <section data-auto-animate>
+          <h1 data-id="h1"><code>class="r-stack"</code></h1>
+          <p>Stack only. As intended on Firefox & Chrome.</p>
+          <div class="r-stack">
+            <img src="images/wide.png" alt="wide image" />
+            <img src="images/tall.png" alt="tall image" />
+          </div>
+        </section>
+        <!-- slide 3 -->
+        <section data-auto-animate>
+          <h1 data-id="h1"><code>class="r-stack r-stretch"</code></h1>
+          <p>
+            Stack only. On Firefox, limits section to viewport. On Chrome,
+            stretches off bottom of viewport :(
+          </p>
+          <div class="r-stack r-stretch">
+            <img src="images/wide.png" alt="wide image" />
+            <img src="images/tall.png" alt="tall image" />
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize();
+    </script>
+  </body>
+</html>
