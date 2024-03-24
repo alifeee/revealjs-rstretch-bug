@@ -19,13 +19,13 @@
         <!-- slide 1 -->
         <section data-auto-animate>
           <h1 data-id="h1"><code>no images</code></h1>
-          <p>Please view this demo on Firefox and Chrome</p>
+          <p data-id="p">Please view this demo on Firefox and Chrome</p>
         </section>
 
         <!-- slide 2 -->
         <section data-auto-animate>
           <h1 data-id="h1"><code>class="r-stretch"</code></h1>
-          <p>Stretch only. As intended on Firefox & Chrome.</p>
+          <p data-id="p">Stretch only. As intended on Firefox & Chrome.</p>
           <div class="r-stretch">
             <img src="images/wide.png" alt="wide image" />
             <img src="images/tall.png" alt="tall image" />
@@ -35,7 +35,7 @@
         <!-- slide 3 -->
         <section data-auto-animate>
           <h1 data-id="h1"><code>class="r-stack"</code></h1>
-          <p>Stack only. As intended on Firefox & Chrome.</p>
+          <p data-id="p">Stack only. As intended on Firefox & Chrome.</p>
           <div class="r-stack">
             <img src="images/wide.png" alt="wide image" />
             <img src="images/tall.png" alt="tall image" />
@@ -45,11 +45,28 @@
         <!-- slide 4 -->
         <section data-auto-animate>
           <h1 data-id="h1"><code>class="r-stack r-stretch"</code></h1>
-          <p>
-            Stack only. On Firefox, limits section to viewport. On Chrome,
-            stretches off bottom of viewport :(
+          <p data-id="p">
+            Stack and stretch. On Firefox, limits section to viewport. On
+            Chrome, stretches off bottom of viewport :(
           </p>
           <div class="r-stack r-stretch">
+            <img src="images/wide.png" alt="wide image" />
+            <img src="images/tall.png" alt="tall image" />
+          </div>
+        </section>
+
+        <!-- slide 5 -->
+        <section data-auto-animate>
+          <h1 data-id="h1">
+            <code
+              >class="r-stack r-stretch" style="grid-template-rows: 100%;"</code
+            >
+          </h1>
+          <p data-id="p">
+            Stack and stretch, and grid-template-rows fix. As intended on
+            Firefox & Chrome.
+          </p>
+          <div class="r-stack r-stretch" style="grid-template-rows: 100%">
             <img src="images/wide.png" alt="wide image" />
             <img src="images/tall.png" alt="tall image" />
           </div>
